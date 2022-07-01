@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-family:'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(141, 147, 182);
+}
+nav{
+    height: 6rem;
+    background-color: rgb(17, 3, 30);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: auto 3rem;
+    font-size: 2.2rem;
+    transition: font-size 100ms ease-out 30ms
+}
+a:active{
+    color: red;
+}
+a:hover{
+    font-size: 2.7rem;
+    color: brown;
+}
+#welcome-section{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 8rem;
+    transition: font-size 100ms linear 30ms, letter-spacing 1000ms ease-in-out;
+}
+h1:hover{
+    font-size: 8.5rem;
+    letter-spacing: 7rem;
+}
+p{
+    font-size: 2rem;
+}
+
+
+#projects{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.project-tile{
+    box-shadow: 0.3rem 0.5rem 30px 5px rgba(205, 3, 255, 0.623);
+    padding: 2rem;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.651);
+    transition: transform 200ms ease-in-out;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-tile:hover{
+    transform: translateY(-1rem);
+
+}
+img{
+    height: 23rem;
+}
+#contact{
+    text-align: center;
+}
+@media (max-width: 800px) {
+    html{
+        font-size: 7px;
+    }
+    nav{
+        display: none;
+    }
+}
